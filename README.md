@@ -13,3 +13,5 @@ poner diferencias: que en el 1ro no aparece mi info y en el segundo get si.
 Ejercicio 4
 https://www.salesforce.com/trailblazer/tomascampilones
 
+Ejercicio 5
+![Diagrama sin título](https://github.com/tomascampi14/ProContacto/assets/144504388/d1dcd937-6bed-4340-a81a-0374dbd38b54)
