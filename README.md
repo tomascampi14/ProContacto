@@ -10,4 +10,6 @@ item 3
 ![image](https://github.com/tomascampi14/ProContacto/assets/144504388/5dfeb0f2-cd91-4621-899c-7c4501af2358)
 poner diferencias: que en el 1ro no aparece mi info y en el segundo get si.
 
+Ejercicio 4
+https://www.salesforce.com/trailblazer/tomascampilones
 
