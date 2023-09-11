@@ -1,4 +1,8 @@
 # Prueba práctica ProContacto
+### Indice de navegación
+
+[TOCM]
+
 *Una vez realizada la instalación del ambiente, se procede a resolver los ejercicios propuestos a partir del punto 2.*
 ## Ejercicio 2
 #### ¿Que es un servidor HTTP?
@@ -230,3 +234,54 @@ Ahora podemos visualizar nuestros datos en el JSON que nos muestra el link origi
 
 ![Id_json](https://github.com/tomascampi14/ProContacto/assets/144504388/3e639088-6e4f-4485-9ed4-d2aa96898f1c)
 
+*Luego, agregamos el campo al objeto Contact*
+
+![Idprocontacto](https://github.com/tomascampi14/ProContacto/assets/144504388/0a6b240d-3568-4836-a678-ee6b09ca907c)
+
+*Por último desarrollamos el Trigger solicitado*
+
+
+```
+trigger idprocontacto on Contact (after insert, after update) {
+    // Lista para almacenar los IDs de contacto que cumplen con el criterio
+    List<Id> contactIdsToUpdate = new List<Id>();
+    
+    // Recorre todos los registros de contacto que se han insertado o actualizado
+    for (Contact con : Trigger.new) {
+        if (con.idprocontacto != null) {
+            contactIdsToUpdate.add(con.Id);
+        }
+    }
+    
+    if (!contactIdsToUpdate.isEmpty()) {
+        // Realiza una solicitud al servicio web para obtener datos de correo electrónico
+        // Utiliza la URL del servicio web y pasa los IDs de contacto como parámetros
+        
+        // Ejemplo de cómo hacer una solicitud HTTP en Apex (puede variar según la implementación):
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint('https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json');
+        req.setMethod('POST');
+        req.setHeader('Content-Type', 'application/json');
+        req.setBody(JSON.serialize(contactIdsToUpdate));
+        
+        // Enviar la solicitud y manejar la respuesta
+        HttpResponse res = new Http().send(req);
+        
+        if (res.getStatusCode() == 200) {
+            // Analizar la respuesta JSON para obtener los correos electrónicos
+            List<Map<String, Object>> responseData = (List<Map<String, Object>>) JSON.deserializeUntyped(res.getBody());
+            
+            // Actualizar los contactos con los correos electrónicos obtenidos
+            List<Contact> contactsToUpdate = new List<Contact>();
+            for (Map<String, Object> data : responseData) {
+                Contact con = new Contact(Id = (Id)data.get('ContactId'));
+                con.Email = (String)data.get('Email');
+                contactsToUpdate.add(con);
+            }
+            
+            // Actualizar los contactos en Salesforce
+            update contactsToUpdate;
+        }
+    }
+}
+```
