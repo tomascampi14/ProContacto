@@ -158,4 +158,69 @@ Ahora podemos visualizar nuestros datos en el JSON que nos muestra el link origi
 - **Case:** *Caso. Un caso se utiliza para registrar y dar seguimiento a las solicitudes, problemas o consultas de los clientes.*
 - **Article:** *Artículo. Es una unidad de información que proporciona detalles sobre un tema en especifico.*
 
+*Luego, realizamos el diagrama que muestra la relación entre cada concepto*
+
 ![Diagrama sin título](https://github.com/tomascampi14/ProContacto/assets/144504388/d1dcd937-6bed-4340-a81a-0374dbd38b54)
+
+## Ejercicio 6
+
+### Soluciones de Salesforce
+#### ¿Qué es Salesforce?
+*Salesforce es una empresa de tecnología líder en el mundo que se especializa en el desarrollo de software y servicios en la nube relacionados con la gestión de relaciones con los clientes (CRM por sus siglas en inglés, Customer Relationship Management). Salesforce ofrece una amplia gama de productos y soluciones diseñados para ayudar a las empresas a administrar sus relaciones con los clientes, automatizar procesos comerciales y mejorar la toma de decisiones.*
+#### ¿Qué es Sales Cloud?
+*Sales Cloud es una plataforma de Salesforce diseñada para la gestión de ventas y relaciones con clientes. Ayuda a las empresas a automatizar procesos de ventas, administrar contactos y oportunidades, y mejorar la eficiencia en el ciclo de ventas.*
+#### ¿Qué es Service Cloud?
+*Service Cloud es una plataforma de Salesforce centrada en la atención al cliente. Permite a las empresas gestionar casos de servicio, brindar soporte técnico y ofrecer experiencias de atención al cliente más personalizadas.*
+#### ¿Qué es Health Cloud?
+*Health Cloud es una plataforma de Salesforce diseñada específicamente para la industria de la salud y el cuidado médico. Proporciona herramientas para la gestión de pacientes, el seguimiento de historias clínicas electrónicas y la coordinación de la atención médica, lo que permite a las organizaciones de atención médica ofrecer un mejor servicio y una atención más eficiente a los pacientes.*
+#### ¿Qué es Marketing Cloud?
+*Marketing Cloud es una plataforma de Salesforce que se enfoca en la gestión de marketing y la automatización de marketing. Permite a las empresas crear campañas de marketing, enviar correos electrónicos, analizar el rendimiento de las campañas y personalizar la interacción con los clientes para mejorar las estrategias de marketing.*
+
+### Funcionalidades de Salesforce
+#### ¿Qué es un RecordType?
+*Un RecordType es un concepto utilizado en Salesforce para definir diferentes categorías o tipos de registros dentro de un objeto personalizado o estándar. Cada tipo de registro tiene sus propios campos y configuraciones específicas, lo que permite personalizar cómo se capturan y almacenan los datos en Salesforce para diferentes propósitos.*
+#### ¿Qué es un ReportType?
+*Un ReportType en Salesforce es un concepto que define la estructura o el modelo de datos que se utilizará para crear informes en la plataforma. Determina qué objetos están relacionados y qué campos están disponibles para incluir en un informe específico.*
+#### ¿Qué es un Page Layout?
+Un Page Layout en Salesforce es una configuración que define cómo se muestra y se organiza la información en la interfaz de usuario de un registro de un objeto en particular. En otras palabras, determina la apariencia y la disposición de los campos y la información en la página de detalle de un registro.
+#### ¿Qué es un Compact Layout?
+*Un Compact Layout en Salesforce es una configuración que define qué campos y acciones se muestran de manera rápida y resumida en la parte superior de un registro de un objeto cuando se ve en una lista o en una vista de lista, como una lista de registros en una vista de lista de un objeto personalizado o estándar.*
+#### ¿Qué es un Perfil?
+*Un Perfil en Salesforce es una configuración que define qué acciones y datos pueden realizar y ver los usuarios en la plataforma. Cada usuario de Salesforce se asocia con un perfil que determina sus permisos y nivel de acceso a objetos y registros en la aplicación.*
+#### ¿Qué es un Rol?
+*Un Rol en Salesforce es una entidad que se utiliza para definir la jerarquía de acceso en una organización. Los roles son parte integral del modelo de seguridad de Salesforce y determinan qué registros pueden ver y editar los usuarios en función de su posición en la jerarquía y su relación con otros registros.*
+#### ¿Qué es un Validation Rule?
+*Una Validation Rule (Regla de Validación) en Salesforce es una lógica personalizada que se utiliza para verificar y garantizar que los datos ingresados o modificados por los usuarios cumplan con ciertas condiciones o criterios específicos antes de permitir que se guarden en la base de datos. Las Validation Rules son una parte importante de la configuración de Salesforce para mantener la integridad y la consistencia de los datos.*
+#### ¿Qué diferencia hay entre una relación Master Detail y Lookup?
+*En Salesforce, las relaciones Master-Detail y Lookup son dos tipos diferentes de relaciones que se utilizan para conectar objetos (tablas) en la base de datos. Aquí tienes las diferencias clave entre ambas:*
+###### *Relación Master-Detail:*
+
+**Jerarquía de Propietario/Subordinado:** *En una relación Master-Detail, existe una jerarquía clara de propietario/subordinado entre los objetos. El objeto "Maestro" (Master) es el propietario y controla el ciclo de vida de los registros relacionados en el objeto "Detalle" (Detail).*
+
+**Integridad Referencial Fuerte:** *Una relación Master-Detail establece una integridad referencial fuerte, lo que significa que los registros en el objeto "Detalle" dependen directamente de los registros en el objeto "Maestro". Si se elimina un registro maestro, todos los registros detallados relacionados se eliminan automáticamente (en cascada). Esto garantiza la consistencia de los datos.*
+
+**Campos Obligatorios:** *Puedes hacer campos en el objeto "Detalle" obligatorios cuando tienen una relación Master-Detail. Esto significa que los registros detallados deben estar vinculados a un registro maestro y no pueden existir de forma independiente.*
+
+###### Relación Lookup:
+
+**Sin Jerarquía de Propietario/Subordinado:** *En una relación Lookup, no existe una jerarquía de propietario/subordinado. Los registros en el objeto relacionado (objeto "Lookup") no dependen de los registros en el objeto principal (objeto "Maestro"). Los registros Lookup pueden existir de forma independiente.*
+
+**Integridad Referencial Flexible:** *A diferencia de Master-Detail, una relación Lookup no establece una integridad referencial fuerte. Si se elimina un registro en el objeto "Maestro," los registros relacionados en el objeto "Lookup" no se eliminan automáticamente. En su lugar, los campos de búsqueda simplemente se quedan vacíos.*
+
+**Campos Opcionales:** *Los campos de búsqueda en un objeto "Lookup" suelen ser opcionales, lo que significa que los registros pueden o no estar vinculados a un registro principal.*
+#### ¿Qué es un Sandbox?
+*Un Sandbox es un entorno de desarrollo y pruebas aislado y separado en Salesforce que permite a los equipos de desarrollo probar cambios, personalizaciones y configuraciones en un ambiente seguro antes de implementarlos en su instancia de Salesforce en producción. Los Sandboxes son esenciales para garantizar la calidad y la estabilidad de las personalizaciones y las actualizaciones en Salesforce sin afectar directamente a la instancia en producción.*
+#### ¿Qué es un ChangeSet?
+*Un Change Set es una herramienta de Salesforce que se utiliza para recopilar, gestionar y migrar personalizaciones y configuraciones de un entorno Salesforce a otro, generalmente desde un entorno de desarrollo o pruebas a un entorno de producción. Los Change Sets facilitan el proceso de implementar cambios de manera controlada y aseguran que las personalizaciones y configuraciones se muevan de manera segura y coherente entre diferentes instancias de Salesforce.*
+#### ¿Para qué sirve el import Wizard de Salesforce?
+*El Import Wizard de Salesforce es una herramienta que permite a los usuarios cargar datos masivamente en una instancia de Salesforce desde fuentes externas, como hojas de cálculo de Excel o archivos CSV (valores separados por comas). Esta herramienta es útil para agilizar la importación de datos y garantizar la precisión de la información en Salesforce sin necesidad de programación o conocimientos técnicos avanzados.*
+#### ¿Para qué sirve la funcionalidad Web to Lead?
+*La funcionalidad "Web to Lead" en Salesforce es una herramienta que permite a las empresas capturar automáticamente información de clientes potenciales o prospectos que llenan formularios en su sitio web y convertirla en registros de clientes potenciales dentro de su instancia de Salesforce. Esta función es especialmente útil para la generación de clientes potenciales y la gestión de ventas, ya que automatiza la entrada de datos y facilita el seguimiento de clientes potenciales generados en línea.*
+#### ¿Para qué sirve la funcionalidad Web to Case?
+*La funcionalidad "Web to Case" en Salesforce es una herramienta que permite a las empresas automatizar la creación de casos de servicio al cliente a partir de solicitudes o consultas enviadas por los usuarios a través de formularios en línea en su sitio web. Esta función es esencial para agilizar la gestión de solicitudes de servicio al cliente, mejorar la eficiencia y ofrecer una experiencia de atención al cliente más rápida y efectiva.*
+
+#### ¿Para qué sirve la funcionalidad Omnichannel?
+*La funcionalidad Omnichannel en Salesforce es una herramienta que se utiliza para gestionar y optimizar la experiencia de atención al cliente a través de múltiples canales de comunicación de manera integrada y coherente. La idea principal detrás del enfoque Omnichannel es brindar a los clientes una experiencia fluida y consistente, independientemente del canal que elijan para interactuar con una empresa.*
+#### ¿Para qué sirve la funcionalidad Chatter?
+*La funcionalidad Chatter en Salesforce es una plataforma de colaboración y comunicación social empresarial que sirve para mejorar la comunicación interna y la colaboración entre los equipos de una organización. Chatter facilita la interacción entre los usuarios en la plataforma Salesforce y puede utilizarse para diversos propósitos en una empresa.*
+
