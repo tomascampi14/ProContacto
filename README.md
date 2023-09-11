@@ -142,7 +142,7 @@ Ahora podemos visualizar nuestros datos en el JSON que nos muestra el link origi
 
 ## Ejercicio 4
 
-*Luego de haber realizado los 6 modulos solicitados de Trailheado, adjunto link para verificar las 6 insignias.*
+*Luego de haber realizado los 6 modulos solicitados de Trailhead, adjunto link para verificar las 6 insignias.*
 
 `<link>` : <https://www.salesforce.com/trailblazer/tomascampilones>
 
