@@ -224,4 +224,9 @@ Ahora podemos visualizar nuestros datos en el JSON que nos muestra el link origi
 #### ¿Para qué sirve la funcionalidad Chatter?
 *La funcionalidad Chatter en Salesforce es una plataforma de colaboración y comunicación social empresarial que sirve para mejorar la comunicación interna y la colaboración entre los equipos de una organización. Chatter facilita la interacción entre los usuarios en la plataforma Salesforce y puede utilizarse para diversos propósitos en una empresa.*
 
+## Ejercicio 7
+
+*Consultamos nuestro ID haciendo el **GET** con **POSTMAN***
+
+![Id_json](https://github.com/tomascampi14/ProContacto/assets/144504388/3e639088-6e4f-4485-9ed4-d2aa96898f1c)
 
