@@ -182,7 +182,7 @@ Ahora podemos visualizar nuestros datos en el JSON que nos muestra el link origi
 #### ¿Qué es un ReportType?
 *Un ReportType en Salesforce es un concepto que define la estructura o el modelo de datos que se utilizará para crear informes en la plataforma. Determina qué objetos están relacionados y qué campos están disponibles para incluir en un informe específico.*
 #### ¿Qué es un Page Layout?
-Un Page Layout en Salesforce es una configuración que define cómo se muestra y se organiza la información en la interfaz de usuario de un registro de un objeto en particular. En otras palabras, determina la apariencia y la disposición de los campos y la información en la página de detalle de un registro.
+*Un Page Layout en Salesforce es una configuración que define cómo se muestra y se organiza la información en la interfaz de usuario de un registro de un objeto en particular. En otras palabras, determina la apariencia y la disposición de los campos y la información en la página de detalle de un registro.*
 #### ¿Qué es un Compact Layout?
 *Un Compact Layout en Salesforce es una configuración que define qué campos y acciones se muestran de manera rápida y resumida en la parte superior de un registro de un objeto cuando se ve en una lista o en una vista de lista, como una lista de registros en una vista de lista de un objeto personalizado o estándar.*
 #### ¿Qué es un Perfil?
@@ -193,7 +193,7 @@ Un Page Layout en Salesforce es una configuración que define cómo se muestra y
 *Una Validation Rule (Regla de Validación) en Salesforce es una lógica personalizada que se utiliza para verificar y garantizar que los datos ingresados o modificados por los usuarios cumplan con ciertas condiciones o criterios específicos antes de permitir que se guarden en la base de datos. Las Validation Rules son una parte importante de la configuración de Salesforce para mantener la integridad y la consistencia de los datos.*
 #### ¿Qué diferencia hay entre una relación Master Detail y Lookup?
 *En Salesforce, las relaciones Master-Detail y Lookup son dos tipos diferentes de relaciones que se utilizan para conectar objetos (tablas) en la base de datos. Aquí tienes las diferencias clave entre ambas:*
-###### *Relación Master-Detail:*
+##### *Relación Master-Detail:*
 
 **Jerarquía de Propietario/Subordinado:** *En una relación Master-Detail, existe una jerarquía clara de propietario/subordinado entre los objetos. El objeto "Maestro" (Master) es el propietario y controla el ciclo de vida de los registros relacionados en el objeto "Detalle" (Detail).*
 
@@ -201,7 +201,7 @@ Un Page Layout en Salesforce es una configuración que define cómo se muestra y
 
 **Campos Obligatorios:** *Puedes hacer campos en el objeto "Detalle" obligatorios cuando tienen una relación Master-Detail. Esto significa que los registros detallados deben estar vinculados a un registro maestro y no pueden existir de forma independiente.*
 
-###### Relación Lookup:
+##### Relación Lookup:
 
 **Sin Jerarquía de Propietario/Subordinado:** *En una relación Lookup, no existe una jerarquía de propietario/subordinado. Los registros en el objeto relacionado (objeto "Lookup") no dependen de los registros en el objeto principal (objeto "Maestro"). Los registros Lookup pueden existir de forma independiente.*
 
@@ -223,4 +223,5 @@ Un Page Layout en Salesforce es una configuración que define cómo se muestra y
 *La funcionalidad Omnichannel en Salesforce es una herramienta que se utiliza para gestionar y optimizar la experiencia de atención al cliente a través de múltiples canales de comunicación de manera integrada y coherente. La idea principal detrás del enfoque Omnichannel es brindar a los clientes una experiencia fluida y consistente, independientemente del canal que elijan para interactuar con una empresa.*
 #### ¿Para qué sirve la funcionalidad Chatter?
 *La funcionalidad Chatter en Salesforce es una plataforma de colaboración y comunicación social empresarial que sirve para mejorar la comunicación interna y la colaboración entre los equipos de una organización. Chatter facilita la interacción entre los usuarios en la plataforma Salesforce y puede utilizarse para diversos propósitos en una empresa.*
+
 
