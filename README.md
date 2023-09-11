@@ -1,7 +1,4 @@
 # Prueba práctica ProContacto
-### Indice de navegación
-
-[TOCM]
 
 *Una vez realizada la instalación del ambiente, se procede a resolver los ejercicios propuestos a partir del punto 2.*
 ## Ejercicio 2
