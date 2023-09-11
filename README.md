@@ -121,17 +121,41 @@
 
 *El encabezado "Content-Type" es especialmente importante en las solicitudes que tienen un cuerpo (como las solicitudes POST) y en las respuestas. Indica el tipo de contenido que se encuentra en el cuerpo de la solicitud o respuesta, lo que permite al servidor o al cliente procesar los datos de manera adecuada.*
 
+## Ejercicio 3
 
-Ejercicio 5
-Lead: Cliente Potencial. Es una persona o empresa que ha mostrado interés en los productos o servicios ofrecidos.
-Account: Cuenta. Es una entidad comercial o cliente con la que una empresa mantiene una relación continua.
-Contact: Contacto. Persona especifica asociada a una cuenta.
-Opportunity: Oportunidad. Es una posibilidad de negocio con un cliente potencial o existente.
-Product: Producto. Es un articulo o servicio que una empresa ofrece a sus clientes.
-PriceBook: Catálogo de precios. Es una lista de productos o servicios junto con sus precios asociados.
-Quote: Cotización. Es un documento que detalla los productos o servicios que una empresa esta dispuesta a proporcionar a un cliente.
-Asset: Activo. Representa un articulo o recurso que una empresa posee o administra.
-Case: Caso. Un caso se utiliza para registrar y dar seguimiento a las solicitudes, problemas o consultas de los clientes.
-Article: Artículo. Es una unidad de información que proporciona detalles sobre un tema en especifico.
+*Procedemos a realizar la solicitud del tipo **GET** y obtenemos los siguientes resultados del recurso WEB.*
+
+![Get1](https://github.com/tomascampi14/ProContacto/assets/144504388/4b9bd56b-e0fe-4a45-8189-be67943a81b9)
+
+*Luego realizamos la solicitud del tipo **POST** con el body indicando nombre y email.*
+
+![Post](https://github.com/tomascampi14/ProContacto/assets/144504388/a995df84-a01b-4935-9e0f-a28b23e9e54a)
+
+*Por ultimo, realizamos nuevamente un request  **GET** para obtener los nuevos resultados del recurso WEB.*
+
+![Get2](https://github.com/tomascampi14/ProContacto/assets/144504388/f86974fa-2e71-43a9-bd50-42ac70833d02)
+
+#### Diferencia entre el primer y ultimo GET
+*Podemos observar que luego de realizar el request **POST** hemos enviado nuestros datos al servidor y hemos modificado los recursos originales que nos ofrecia la web.
+Ahora podemos visualizar nuestros datos en el JSON que nos muestra el link original*
+
+## Ejercicio 4
+
+*Luego de haber realizado los 6 modulos solicitados de Trailheado, adjunto link para verificar las 6 insignias.*
+
+`<link>` : <https://www.salesforce.com/trailblazer/tomascampilones>
+
+## Ejercicio 5
+
+- **Lead:** *Cliente Potencial. Es una persona o empresa que ha mostrado interés en los productos o servicios ofrecidos.*
+- **Account:** *Cuenta. Es una entidad comercial o cliente con la que una empresa mantiene una relación continua.*
+- **Contact:** *Contacto. Persona especifica asociada a una cuenta.*
+- **Opportunity:** *Oportunidad. Es una posibilidad de negocio con un cliente potencial o existente.*
+- **Product:** *Producto. Es un articulo o servicio que una empresa ofrece a sus clientes.*
+- **PriceBook:** *Catálogo de precios. Es una lista de productos o servicios junto con sus precios asociados.*
+- **Quote:** *Cotización. Es un documento que detalla los productos o servicios que una empresa esta dispuesta a proporcionar a un cliente.*
+- **Asset:** *Activo. Representa un articulo o recurso que una empresa posee o administra.*
+- **Case:** *Caso. Un caso se utiliza para registrar y dar seguimiento a las solicitudes, problemas o consultas de los clientes.*
+- **Article:** *Artículo. Es una unidad de información que proporciona detalles sobre un tema en especifico.*
 
 ![Diagrama sin título](https://github.com/tomascampi14/ProContacto/assets/144504388/d1dcd937-6bed-4340-a81a-0374dbd38b54)
