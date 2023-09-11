@@ -7,10 +7,10 @@
 #### ¿Qué son los verbos HTTP? Mencionar los más conocidos
 *Los verbos HTTP, también conocidos como métodos HTTP, son comandos utilizados en el protocolo HTTP para indicar la acción que se debe realizar en un recurso web. Los más conocidos son:*
 
-**GET:** *Solicita y recupera datos de un recurso web.*
-**POST:** *Envía datos al servidor para ser procesados y, generalmente, crear un nuevo recurso.*
-**PUT:** *Actualiza un recurso web o crea uno nuevo si no existe.*
-**DELETE:** *Elimina un recurso web especificado.*
+- **GET:** *Solicita y recupera datos de un recurso web.*
+- **POST:** *Envía datos al servidor para ser procesados y, generalmente, crear un nuevo recurso.*
+- **PUT:** *Actualiza un recurso web o crea uno nuevo si no existe.*
+- **DELETE:** *Elimina un recurso web especificado.*
 
 #### ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers?
 
